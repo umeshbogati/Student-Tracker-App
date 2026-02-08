@@ -1,23 +1,28 @@
 import type { Student } from "../types/Student";
-import StudentCard  from "./StudentCard";
+
 import "./StudentList.css";
 
-interface StudentProps {
+interface StudentListProps {
     students: Student[];
-    onDelete: (id: number) => void;
+    deleteStudent: (id: number) => void;
 }
 
-function StudentList ({ students, onDelete }: StudentProps) {
+export default function StudentList({ students, deleteStudent }: StudentListProps) {
     return (
         <div className="student-list">
-            {students.map((student) =>(
-                <StudentCard key={student.id} student={student} onDelete={onDelete} />
-                
+            {students.map((student) => (
+                <div key={student.id} className="student-card">
+                    <img src={student.imageUrl} alt={student.name} />
+                    <div className="student-info">
+                        <h3>{student.name}</h3>
+                        <p>Grade: {student.grade}</p>
+                        <p>Roll No: {student.rollNumber}</p>
+                        <p>Phone: {student.phoneNumber}</p>
+                        <p>Gender: {student.gender}</p>
+                        <button onClick={() => deleteStudent(student.id)}>Delete</button>
+                    </div>
+                </div>
             ))}
-
-
         </div>
     );
 }
-
-export default StudentList;

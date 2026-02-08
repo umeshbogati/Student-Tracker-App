@@ -1,0 +1,21 @@
+.profile{
+    width: 250px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px (0,0,0,0.1);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #4f46e5;
+    margin-bottom: 10px;
+}
+

@@ -1,10 +1,12 @@
-export type Gender = "Male" | "Female" | "Others";
+export type Gender = "Male" | "Female" ;
 
 export interface Student {
     id: number;
     name: string;
     grade: string;
     phoneNumber: string;
-    rollNumber: number;
+    rollNumber: string;
     gender: Gender;
+    imageUrl: string;
+
 }
