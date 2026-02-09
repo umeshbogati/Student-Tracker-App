@@ -23,7 +23,7 @@ export default function StudentForm({ addStudent }: StudentFormProps) {
             rollNumber,
             phoneNumber,
             gender,
-            imageUrl: imageUrl || "https://i.pravatar.cc/150?img=3"
+            imageUrl: imageUrl || ""
         };
         addStudent(newStudent);
         setName(""); setGrade(""); setRollNumber(""); setPhoneNumber(""); setGender("Male"); setImageUrl("");

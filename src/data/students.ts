@@ -8,7 +8,7 @@ const studentsData: Student[] = [
         phoneNumber: "9805045344",
         rollNumber: "34",
         gender: "Male",
-        imageUrl: "0-02-06-fe57e603caad3ec3d35d79b922713df478d44bdeff267df0f3f5cb91a40e0afb_721a513115e773db",
+        imageUrl: "https://qph.cf2.quoracdn.net/main-qimg-aab50c34849c78f92aade904dd765154-lq",
     },
 
     {
@@ -18,7 +18,7 @@ const studentsData: Student[] = [
         phoneNumber: "9867453221",
         rollNumber: "23",
         gender: "Female",
-        imageUrl: "0-02-03-db6cc1eee42a5fa02b9bff917052132bba32071cd128748a138c8c8a6ca1ef2e_99d1746461cf670e"
+        imageUrl: "https://travelnepal.com/wp-content/uploads/2021/12/anuradha-mayur-gurung-768x560.jpg",
     },
 ];
 

@@ -8,6 +8,7 @@ interface StudentListProps {
 }
 
 export default function StudentList({ students, deleteStudent }: StudentListProps) {
+    console.log(students)
     return (
         <div className="student-list">
             {students.map((student) => (
