@@ -21,5 +21,15 @@ export function useStudents() {
         setStudents(prev => prev.filter(s=> s.id !== id));
     };
 
-    return { students, addStudent, deleteStudent };
-}
+    const updateStudent = (updatedStudent: Student) => {
+        setStudents(prev =>
+            prev.map(s => (s.id === updatedStudent.id ? updatedStudent : s))
+        );
+    };
+
+    const getStudentById = (id: number) => {
+        return students.find(s => s.id === id);
+    };
+
+    return { students, addStudent, deleteStudent, updateStudent, getStudentById };
+};

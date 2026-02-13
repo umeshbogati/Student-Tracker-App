@@ -8,5 +8,7 @@ export interface Student {
     rollNumber: string;
     gender: Gender;
     imageUrl: string;
+    email: string;
+    address: string;
 
 }

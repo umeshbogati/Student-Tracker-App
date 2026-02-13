@@ -9,6 +9,8 @@ const studentsData: Student[] = [
         rollNumber: "34",
         gender: "Male",
         imageUrl: "https://qph.cf2.quoracdn.net/main-qimg-aab50c34849c78f92aade904dd765154-lq",
+        email: "bogatiu17@gmail.com",
+        address: "Kathmandu, Nepal",
     },
 
     {
@@ -19,7 +21,9 @@ const studentsData: Student[] = [
         rollNumber: "23",
         gender: "Female",
         imageUrl: "https://travelnepal.com/wp-content/uploads/2021/12/anuradha-mayur-gurung-768x560.jpg",
-    },
+        email: "sita.karki@gmail.com",
+        address: "Lalitpur, Nepal",
+     },
 ];
 
 export default studentsData;
