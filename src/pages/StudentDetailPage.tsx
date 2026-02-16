@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
-import { useStudents } from "../hooks/useStudents";
+// import { useStudents } from "../hooks/useStudents";
 import "./StudentDetailPage.css";
+import { useStudentsContext } from "../context/StudentContext";
 
 export default function StudentDetailPage() {
     const { id } = useParams();
-    const { getStudentById } = useStudents();
+    const { getStudentById } = useStudentsContext();
 
     const student = getStudentById(Number(id));
 

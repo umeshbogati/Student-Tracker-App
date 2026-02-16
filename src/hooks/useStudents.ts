@@ -3,6 +3,7 @@ import type {Student} from "../types/Student";
 import studentsData from "../data/students";
 
 export function useStudents() {
+    console.log("Custom hook bata")
     const [students, setStudents] = useState<Student[]>(() => {
         const saved = localStorage.getItem("students");
         return saved ? JSON.parse(saved) : studentsData;
