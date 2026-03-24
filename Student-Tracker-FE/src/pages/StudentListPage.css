@@ -1,0 +1,21 @@
+.student-grid {
+    display: grid;
+    grid-template-columns: 3 ;
+    gap: 2rem;
+}
+
+    
+.add-btn {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #3730a3;
+}
